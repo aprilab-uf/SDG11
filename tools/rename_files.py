@@ -2,6 +2,9 @@ import os
 import uuid
 import argparse
 '''
+Description:
+Provides CLI to rename all videos in a provided directory with names matching dataset convention.
+
 TO USE:
 python rename_files.py -d /path/to/directory -b action_environment_diverOrientation
 
