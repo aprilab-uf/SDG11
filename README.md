@@ -1,30 +1,31 @@
 # Scuba-Gesture-Dataset
-
-DroneDeploy NeRF Dataset
 ===
 
-DroneDeploy NeRF Dataset ("DNF") contains a number of real world scenes captured by drone that include high resolution images, camera poses (intrinsics and extrinsics) and dense color point clouds. It is intended for computer vision research. All reconstructions were created using [DroneDeploy](https://www.dronedeploy.com).
+The SCUBA Gesture dataset consists of N videos of diver actions/gestures of 11 different classes.
+
+The dataset can be used both for gesture detection for each frame (as each individual frame is labeled) or from the videos directly.
+
 
 Information
 ---
 
 | Name | Image | Images | Points | Size | Preview |
 |-------|------|-------:|-------:|-----:|---|
-| house1 | ![house1](/imgs/house1.png?raw=true "house1")  |     220 |  3M | 1.7GB | [Pointcloud preview](https://drive.google.com/file/d/15AJlYmev3gd_DWsMHR3WTMchVKJq0RVx/view?usp=sharing)
-| house2 | ![house2](/imgs/house2.png?raw=true "house2")  |     952 |  25M | 8.6GB | [Pointcloud preview](https://drive.google.com/file/d/1UotQdkuMQU2LXC5IGLy8QVWw4qmLDX7c/view?usp=sharing)
-| house3 | ![house3](/imgs/house3.png?raw=true "house3")  |     182 |  5M | 1.4GB | [Pointcloud preview](https://drive.google.com/file/d/1Y8U9u0F7uU1Yy35b_4qjNut5r12gDYeh/view?usp=sharing)
-| house4 | ![house4](/imgs/house4.png?raw=true "house4")  |     367 |  10M | 5.2GB | [Pointcloud preview](https://drive.google.com/file/d/1YjJTNUABCzdZEepC1NqWzvqt6HrxF8vp/view?usp=sharing)
-| ruins1 | ![ruins1](/imgs/ruins1.png?raw=true "ruins1") |     391 |  6M | 3.1GB | [Pointcloud preview](https://drive.google.com/file/d/1Oy5otafHEyTs5L73I2btxk2P-rmuh37n/view?usp=sharing)
-| ruins2 | ![ruins2](/imgs/ruins2.png?raw=true "ruins2") |     1174 |  56M | 9.3GB | [Pointcloud preview](https://drive.google.com/file/d/1Awi2eG69Iyggzn0jCDqg45nV41KwO5ZB/view?usp=sharing)
-| ruins3 | ![ruins3](/imgs/ruins3.png?raw=true "ruins3") |     539 |  12M | 4.4GB | [Pointcloud preview](https://drive.google.com/file/d/1BMPBVFeCn4HbksKtB1BPfEzsRjQx_GRE/view?usp=sharing)
-| tower1 | ![tower1](/imgs/tower1.png?raw=true "tower1") |     783 |  42M | 6.1GB | [Pointcloud preview](https://drive.google.com/file/d/1d4V0_MqoYebqlSndAnjKeyoKSUbZJs97/view?usp=sharing)
-| tower2 | ![tower2](/imgs/tower2.png?raw=true "tower2") |     684 |  16M | 5.4GB | [Pointcloud preview](https://drive.google.com/file/d/1mzU9sGT5unzV2Pd9rfSkicS-O181pt2k/view?usp=sharing)
-| pipes1 | ![pipes1](/imgs/pipes1.png?raw=true "pipes1") |     98 |  7M | 1.3GB | [Pointcloud preview](https://drive.google.com/file/d/1Zme6vZsdaQcncvHxKa-y-n-C2APTDUrz/view?usp=sharing)
-
+| OKAY | ![house1](/imgs/house1.png?raw=true "house1")  |     220 |  3M | 1.7GB | [Pointcloud preview](https://drive.google.com/file/d/15AJlYmev3gd_DWsMHR3WTMchVKJq0RVx/view?usp=sharing)
+| YOU | ![house2](/imgs/house2.png?raw=true "house2")  |     952 |  25M | 8.6GB | [Pointcloud preview](https://drive.google.com/file/d/1UotQdkuMQU2LXC5IGLy8QVWw4qmLDX7c/view?usp=sharing)
+| ME | ![house3](/imgs/house3.png?raw=true "house3")  |     182 |  5M | 1.4GB | [Pointcloud preview](https://drive.google.com/file/d/1Y8U9u0F7uU1Yy35b_4qjNut5r12gDYeh/view?usp=sharing)
+| STAY | ![house4](/imgs/house4.png?raw=true "house4")  |     367 |  10M | 5.2GB | [Pointcloud preview](https://drive.google.com/file/d/1YjJTNUABCzdZEepC1NqWzvqt6HrxF8vp/view?usp=sharing)
+| LEFT | ![ruins1](/imgs/ruins1.png?raw=true "ruins1") |     391 |  6M | 3.1GB | [Pointcloud preview](https://drive.google.com/file/d/1Oy5otafHEyTs5L73I2btxk2P-rmuh37n/view?usp=sharing)
+| RIGHT | ![ruins2](/imgs/ruins2.png?raw=true "ruins2") |     1174 |  56M | 9.3GB | [Pointcloud preview](https://drive.google.com/file/d/1Awi2eG69Iyggzn0jCDqg45nV41KwO5ZB/view?usp=sharing)
+| ASCEND | ![ruins3](/imgs/ruins3.png?raw=true "ruins3") |     539 |  12M | 4.4GB | [Pointcloud preview](https://drive.google.com/file/d/1BMPBVFeCn4HbksKtB1BPfEzsRjQx_GRE/view?usp=sharing)
+| DESCEND | ![tower1](/imgs/tower1.png?raw=true "tower1") |     783 |  42M | 6.1GB | [Pointcloud preview](https://drive.google.com/file/d/1d4V0_MqoYebqlSndAnjKeyoKSUbZJs97/view?usp=sharing)
+| BUDDY UP | ![tower2](/imgs/tower2.png?raw=true "tower2") |     684 |  16M | 5.4GB | [Pointcloud preview](https://drive.google.com/file/d/1mzU9sGT5unzV2Pd9rfSkicS-O181pt2k/view?usp=sharing)
+| FOLLOW ME | ![pipes1](/imgs/pipes1.png?raw=true "pipes1") |     98 |  7M | 1.3GB | [Pointcloud preview](https://drive.google.com/file/d/1Zme6vZsdaQcncvHxKa-y-n-C2APTDUrz/view?usp=sharing)
+| STOP | ![pipes1](/imgs/pipes1.png?raw=true "pipes1") |     98 |  7M | 1.3GB | [Pointcloud preview](https://drive.google.com/file/d/1Zme6vZsdaQcncvHxKa-y-n-C2APTDUrz/view?usp=sharing)
 
 Download
 ---
-Download Links: [https://drive.google.com/drive/folders/1kMHAS5l9Zy9yWHp6N4icm2xC7sIeThs7](https://drive.google.com/drive/folders/1kMHAS5l9Zy9yWHp6N4icm2xC7sIeThs7)
+Download Links: https://www.dropbox.com/scl/fo/5rxj3gthms3urg4lqajwk/AFigP8iOmR46MKk3KaxDoWs?rlkey=t65wimousvyamofma9w5f93xm&st=3z4hfw5l&dl=0
 
 
 Structure
