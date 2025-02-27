@@ -19,6 +19,10 @@ When naming video files, they must follow the filename nomenclature:
     * **Diver-orientation:** refers to whether the data is collected when the diver is in a horizontal or vertical position
     * **video-filetype:** can be ".MP4" or ".mp4"
 
+## How to process your recorded diver videos
+
+To process your diver videos, ensure the base file follows the correct naming convention. The video can then be split, with unique identifiers generated for each sub-video, using tools/video-splitter. See the readme.md within video-splitter for instructions on use (terminal command provided). I recommend splitting your larger videos into two second clips using video-splitter, then processing through the clips to eliminate sub-videos which do not contain gestures, or may be confusing as training or test data.
+
 ## General Data Collection Tips
 
 * Ensure diver is in center of frame, and camera is facing the diver. Recording at 1-2 arms-lengths from the diver is recommended for best results.
