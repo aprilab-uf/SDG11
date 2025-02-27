@@ -2,14 +2,12 @@
 
 The aim of the SCUBA Gesture dataset is to further the state-of-the-art (SOTA) in underwater human-robot-interaction (UHRI) research by providing a **robust source of training data for static and dynamic action/gesture recogntion** algorithms, and a standardized set of test data for offline evaluation of diver gesture recognition pipeline performance, assessed across a dynamic set of gestures (for more information on pipeline evaluation, see [pipeline evaluation](#pipeline-evaluation)).
 
- consists of N videos of diver actions/gestures of 11 different classes.
-
-The dataset can be used both for gesture detection for each frame (as each individual frame is labeled) or from the videos directly.
+ The datset currently consists of **N** videos of diver actions/gestures of **11** different classes.
 
 The majority the the current dataset are video sequences of 2 seconds in length, where each video contains only one gesture.
 
 
-Available Gestures
+Currently Available Gestures
 ---
 
 ![Dive Gestures](figures/dive_gestures.png)
@@ -28,6 +26,8 @@ Available Gestures
 | BUDDY UP | ![tower2](/imgs/tower2.png?raw=true "tower2") |     684  | 792MB | [gesture videos](https://www.dropbox.com/scl/fo/9249p9x16pghzhxojg6wa/AIyhohQkP9ypSJx3ofHKh8s?rlkey=aty2ukhw29qbwtmz267uolrq0&st=9za27ioe&dl=0)
 | FOLLOW ME | ![pipes1](/imgs/pipes1.png?raw=true "pipes1") |     98 | 1.3GB | [gesture videos](https://www.dropbox.com/scl/fo/pg53be2us3ju6sdb25fdn/AO-lBTEZJOniEqViOb8p0tI?rlkey=h96dzm5hbn4vm3qjxrkwab4r9&st=pybchl9z&dl=0)
 | STOP | ![pipes1](/imgs/pipes1.png?raw=true "pipes1") |     98 | 1.3GB | [gesture videos](https://www.dropbox.com/scl/fo/fbft7kjnej7f0q8u1oray/ABad602M9iHPL9gmxPAAnAY?rlkey=tdpyqa8pgiu7w85skfmb1ogwc&st=84ahtmoe&dl=0) -->
+
+## Total videos per class
 
 | Name      | Videos | Size | Link |
 |-----------|--------:|-----:|------|
@@ -49,7 +49,7 @@ Available Gestures
 Download Links: https://www.dropbox.com/scl/fo/5rxj3gthms3urg4lqajwk/AFigP8iOmR46MKk3KaxDoWs?rlkey=t65wimousvyamofma9w5f93xm&st=3z4hfw5l&dl=0
 
 
-Structure
+Dataset Folder Structure
 ---
 
 ```
@@ -79,8 +79,9 @@ The `tools` directory contains an expanding collection of tools for working with
 <!-- `tools/dd2ngp.py` - create a `cameras.json` ready for use with [Instant Neural Graphics Primitives](https://github.com/NVlabs/instant-ngp). The default `cameras.json` is included in each zip of the dataset and uses the 50 nearest images to the center of the scene. If you want to use different cameras you can use this script to re-generate a `cameras.json`. -->
 
 
-Usage
+Usage: Training
 ---
+The videos can be used for model training. Simply download the videos you need for training your model. We provide an example class for loading specific data of interest from the dataset.
 <!-- ```sh
 
 instant-ngp$ ./build/testbed --scene ./datasets/house1/cameras.json
@@ -94,12 +95,7 @@ python scripts/run.py --mode="nerf" --scene="house1/cameras.json" --screenshot_t
 ```
 ![script](/imgs/script.jpg?raw=true "script") -->
 
-How to Contribute your own data
----
-
-Please contribute your scuba diving gesture data! Follow the instructions in 'dataset_contribution_guide.md'
-
-Pipeline Evaluation
+Usage: Pipeline Evaluation
 ---
 A key initiative of this work is to establish a **large, open-source dataset** to serve as a standard benchmark for diver action and gesture recognition. By providing a publicly available dataset along with standardized evaluation procedures and metrics, we aim to create a consistent and reproducible framework for assessing different recognition pipelines.
 
@@ -111,6 +107,10 @@ Model results are evaluated using a confusion matrix over the classes tested, wi
 
 Multi-class F-score is also computed as a metric, also averaged over 10 runs.
 
+How to Contribute your own data
+---
+
+Please contribute your scuba diving gesture data! Follow the instructions in 'dataset_contribution_guide.md'
 
 ## License and Citation
 
