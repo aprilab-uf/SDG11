@@ -1,6 +1,8 @@
 # Scuba-Gesture-Dataset
 
-The SCUBA Gesture dataset consists of N videos of diver actions/gestures of 11 different classes.
+The aim of the SCUBA Gesture dataset is to further the state-of-the-art (SOTA) in underwater human-robot-interaction (UHRI) research by providing a **robust source of training data for static and dynamic action/gesture recogntion** algorithms, and a standardized set of test data for offline evaluation of diver gesture recognition pipeline performance, assessed across a dynamic set of gestures (for more information on pipeline evaluation, see [pipeline evaluation](#pipeline-evaluation)).
+
+ consists of N videos of diver actions/gestures of 11 different classes.
 
 The dataset can be used both for gesture detection for each frame (as each individual frame is labeled) or from the videos directly.
 
@@ -92,14 +94,28 @@ python scripts/run.py --mode="nerf" --scene="house1/cameras.json" --screenshot_t
 ```
 ![script](/imgs/script.jpg?raw=true "script") -->
 
-## How to Contribute your own data
+How to Contribute your own data
+---
 
 Please contribute your scuba diving gesture data! Follow the instructions in 'dataset_contribution_guide.md'
+
+Pipeline Evaluation
+---
+A key initiative of this work is to establish a **large, open-source dataset** to serve as a standard benchmark for diver action and gesture recognition. By providing a publicly available dataset along with standardized evaluation procedures and metrics, we aim to create a consistent and reproducible framework for assessing different recognition pipelines.
+
+Currently, it is challenging to systematically determine what contributes to improvements in diver gesture recognition. Ambiguities exist regarding whether variations in performance are due to differences in image quality, model training strategies, underwater image enhancement techniques (or lack thereof), or the choice of model architecture (e.g., CNNs, LSTMs, Transformers). By establishing a common dataset and evaluation criteria, we enable researchers to scientifically compare different approaches, identify key factors driving improvements, and ultimately advance the robustness and reliability of diver gesture recognition systems.
+
+Provided is an example jupyer notebook for loading the desired component of the dataset you would like to test over, loading the data, and running inference on a pretrained model.
+
+Model results are evaluated using a confusion matrix over the classes tested, with results averaged over 10 runs.
+
+Multi-class F-score is also computed as a metric, also averaged over 10 runs.
+
 
 ## License and Citation
 
 ```bibtex
-@misc{},
+@misc{arvix link when we finish this},
 }
 ```
 
