@@ -78,9 +78,12 @@ The `tools` directory contains an expanding collection of tools for working with
 
 <!-- `tools/dd2ngp.py` - create a `cameras.json` ready for use with [Instant Neural Graphics Primitives](https://github.com/NVlabs/instant-ngp). The default `cameras.json` is included in each zip of the dataset and uses the 50 nearest images to the center of the scene. If you want to use different cameras you can use this script to re-generate a `cameras.json`. -->
 
-
-Usage: Training
+Usage
 ---
+---
+
+## Training
+
 The videos can be used for model training. Simply download the videos you need for training your model. We provide an example class for loading specific data of interest from the dataset.
 <!-- ```sh
 
@@ -95,8 +98,8 @@ python scripts/run.py --mode="nerf" --scene="house1/cameras.json" --screenshot_t
 ```
 ![script](/imgs/script.jpg?raw=true "script") -->
 
-Usage: Pipeline Evaluation
----
+## Pipeline Evaluation
+
 A key initiative of this work is to establish a **large, open-source dataset** to serve as a standard benchmark for diver action and gesture recognition. By providing a publicly available dataset along with standardized evaluation procedures and metrics, we aim to create a consistent and reproducible framework for assessing different recognition pipelines.
 
 Currently, it is challenging to systematically determine what contributes to improvements in diver gesture recognition. Ambiguities exist regarding whether variations in performance are due to differences in image quality, model training strategies, underwater image enhancement techniques (or lack thereof), or the choice of model architecture (e.g., CNNs, LSTMs, Transformers). By establishing a common dataset and evaluation criteria, we enable researchers to scientifically compare different approaches, identify key factors driving improvements, and ultimately advance the robustness and reliability of diver gesture recognition systems.
