@@ -1,4 +1,4 @@
-# Scuba-Gesture-Dataset
+# Scuba-Gesture-Dataset (SDG11)
 
 The aim of the SCUBA Gesture dataset is to further the state-of-the-art (SOTA) in underwater human-robot-interaction (UHRI) research by providing a **robust source of training data for static and dynamic action/gesture recogntion** algorithms, and a standardized set of test data for offline evaluation of diver gesture recognition pipeline performance, assessed across a dynamic set of gestures (for more information on pipeline evaluation, see [pipeline evaluation](#pipeline-evaluation)).
 
