@@ -118,7 +118,7 @@ Please contribute your scuba diving gesture data! Follow the instructions in 'da
 ## License and Citation
 
 ```bibtex
-@misc{arvix link when we finish this},
+@misc{coming soon!},
 }
 ```
 
