@@ -1,0 +1,8 @@
+[submodule "submodules/submodules/gesture_recognizer"]
+	path = submodules/submodules/gesture_recognizer
+	url = https://github.com/hez4777/gesture_recognizer.git
+	branch = main
+[submodule "submodules/gesture_recognizer"]
+	path = submodules/gesture_recognizer
+	url = https://github.com/hez4777/gesture_recognizer.git
+	branch = main
