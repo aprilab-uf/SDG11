@@ -6,3 +6,7 @@
 	path = submodules/gesture_recognizer
 	url = https://github.com/hez4777/gesture_recognizer.git
 	branch = main
+[submodule "submodules/Spatial-Temporal-Transformer-Network-Mediapipe"]
+	path = submodules/Spatial-Temporal-Transformer-Network-Mediapipe
+	url = https://github.com/HowardZhangUF/Spatial-Temporal-Transformer-Network-Mediapipe.git
+	branch = master
