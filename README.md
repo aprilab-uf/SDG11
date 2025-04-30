@@ -48,7 +48,6 @@ Currently Available Gestures
 ---
 Download Links: https://www.dropbox.com/scl/fo/5rxj3gthms3urg4lqajwk/AFigP8iOmR46MKk3KaxDoWs?rlkey=t65wimousvyamofma9w5f93xm&st=3z4hfw5l&dl=0
 
-
 Dataset Folder Structure
 ---
 
@@ -68,6 +67,45 @@ Public_dataset/
       ...
     ...
 ```
+
+## Synchronized Diver Pose + Video Frames (`SYNCHRONIZED_DIVER_DATA/`)
+
+In addition to raw gesture video data, the dataset includes a structured subset named `SYNCHRONIZED_DIVER_DATA/`, located within the main Dropbox folder. This directory contains synchronized 3D diver pose data (from Qualisys QTM) paired with corresponding camera frames from the BlueROV2. It is intended for training and evaluating multimodal models that combine visual and motion cues for more robust underwater gesture recognition.
+
+Unlike the `Public_dataset/` folder, which contains raw videos, `SYNCHRONIZED_DIVER_DATA/` follows a new format where each gesture is organized into:
+- A gesture folder (e.g., `YOU/`, `BUDDY_UP/`, etc.)
+- Ten numbered subfolders (`1/` through `10/`) per gesture, each containing:
+  - A `frames/` folder of synchronized image frames.
+  - A `.json` file with 3D marker data and (when possible) 6D rigid body poses.
+
+### Folder Layout Example
+```
+SYNCHRONIZED_DIVER_DATA/
+├── YOU/
+│   ├── 1/
+│   │   ├── frames/
+│   │   └── YOU_1.json
+│   ├── 2/
+│   │   ├── frames/
+│   │   └── YOU_2.json
+│   └── ...
+├── BUDDY_UP/
+│   ├── 1/
+│   │   ├── frames/
+│   │   └── BUDDY_UP_1.json
+│   └── ...
+```
+
+### JSON Data Format
+Each JSON file is exported from QTM using the following settings:
+
+![alt text](image.png)
+
+Rigid bodies (if present) are labeled as:
+- `DIVER`: created from multiple tracked diver markers or from a single stable marker if insufficient.
+- `BR2`: created from BlueROV2 markers or a representative point.
+
+This structure ensures a clean alignment between pose and visual data for each short gesture clip, making the dataset suitable for pose-supervised gesture classification and tracking tasks.
 
 <!-- The `cameras.xml` contains the poses of each camera along with the distortion parameters, intrinsics and extrinsics. See `tools/util.py` for working with this file directly. The `images` directory contains the images and `points/points.ply` contains the dense pointcloud with `x,y,z,red,green,blue`. -->
 
