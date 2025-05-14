@@ -161,4 +161,4 @@ Please contribute your scuba diving gesture data! Follow the instructions in 'da
 
 This work is made available for academic use under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
- For commercial use and queries please contact support@dronedeploy.com.
+ For commercial use and queries please contact jane.shin@ufl.edu
