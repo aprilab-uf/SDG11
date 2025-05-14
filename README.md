@@ -101,7 +101,7 @@ SYNCHRONIZED_DIVER_DATA/
 ### JSON Data Format
 Each JSON file is exported from QTM using the following settings:
 
-![alt text](image.png)
+![alt text](figures/qtm_json_settings.png)
 
 Rigid bodies (if present) are labeled as:
 - `DIVER`: created from multiple tracked diver markers or from a single stable marker if insufficient.
