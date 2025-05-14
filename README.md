@@ -2,9 +2,12 @@
 
 The aim of the SCUBA Gesture dataset is to further the state-of-the-art (SOTA) in underwater human-robot-interaction (UHRI) research by providing a **robust source of training data for static and dynamic action/gesture recogntion** algorithms, and a standardized set of test data for offline evaluation of diver gesture recognition pipeline performance, assessed across a dynamic set of gestures (for more information on pipeline evaluation, see [pipeline evaluation](#pipeline-evaluation)).
 
- The datset currently consists of **N** videos of diver actions/gestures of **11** different classes.
+ The datset currently consists of **1100** videos of diver actions/gestures of **11** different classes.
+ This includes including **220** videos with synchronized diver pose data.​
 
-The majority the the current dataset are video sequences of 2 seconds in length, where each video contains only one gesture.
+The majority the the current dataset are video sequences of approximately 2 seconds in length, where each video contains only one gesture.
+
+![Dataset Distribution](figures/generate_gesture_bar_plot.png)
 
 
 Currently Available Gestures
