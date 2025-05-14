@@ -9,7 +9,7 @@ The majority the the current dataset are video sequences of 2 seconds in length,
 
 ![Dataset Distribution](figures/gesture_bar_plot.png)
 
-Currently Available Gestures
+Depiction of each available gesture
 ---
 
 ![Dive Gestures](figures/dive_gestures.png)
@@ -118,9 +118,6 @@ The `tools` directory contains an expanding collection of tools for working with
 
 <!-- `tools/dd2ngp.py` - create a `cameras.json` ready for use with [Instant Neural Graphics Primitives](https://github.com/NVlabs/instant-ngp). The default `cameras.json` is included in each zip of the dataset and uses the 50 nearest images to the center of the scene. If you want to use different cameras you can use this script to re-generate a `cameras.json`. -->
 
-Usage
----
----
 
 ## Training
 
@@ -144,7 +141,7 @@ A key initiative of this work is to establish a **large, open-source dataset** t
 
 Currently, it is challenging to systematically determine what contributes to improvements in diver gesture recognition. Ambiguities exist regarding whether variations in performance are due to differences in image quality, model training strategies, underwater image enhancement techniques (or lack thereof), or the choice of model architecture (e.g., CNNs, LSTMs, Transformers). By establishing a common dataset and evaluation criteria, we enable researchers to scientifically compare different approaches, identify key factors driving improvements, and ultimately advance the robustness and reliability of diver gesture recognition systems.
 
-Provided is an example jupyer notebook for loading the desired component of the dataset you would like to test over, loading the data, and running inference on a pretrained model.
+Provided is an example jupyter notebook for loading the desired component of the dataset you would like to test over, loading the data, and running inference on a pretrained model.
 
 Model results are evaluated using a confusion matrix over the classes tested, with results averaged over 10 runs.
 
@@ -155,12 +152,12 @@ How to Contribute your own data
 
 Please contribute your scuba diving gesture data! Follow the instructions in 'dataset_contribution_guide.md'
 
-## License and Citation
+<!-- ## License and Citation
 
 ```bibtex
 @misc{coming soon!},
 }
-```
+``` -->
 
 This work is made available for academic use under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
