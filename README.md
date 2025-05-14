@@ -2,13 +2,12 @@
 
 The aim of the SCUBA Gesture dataset is to further the state-of-the-art (SOTA) in underwater human-robot-interaction (UHRI) research by providing a **robust source of training data for static and dynamic action/gesture recogntion** algorithms, and a standardized set of test data for offline evaluation of diver gesture recognition pipeline performance, assessed across a dynamic set of gestures (for more information on pipeline evaluation, see [pipeline evaluation](#pipeline-evaluation)).
 
- The datset currently consists of **1100** videos of diver actions/gestures of **11** different classes.
+The datset currently consists of **1100** videos of diver actions/gestures of **11** different classes.
  This includes including **220** videos with synchronized diver pose data.​
 
-The majority the the current dataset are video sequences of approximately 2 seconds in length, where each video contains only one gesture.
+The majority the the current dataset are video sequences of 2 seconds in length, where each video contains only one gesture.
 
-![Dataset Distribution](figures/generate_gesture_bar_plot.png)
-
+![Dataset Distribution](figures/gesture_bar_plot.png)
 
 Currently Available Gestures
 ---
@@ -51,7 +50,6 @@ Currently Available Gestures
 ---
 Download Links: https://www.dropbox.com/scl/fo/5rxj3gthms3urg4lqajwk/AFigP8iOmR46MKk3KaxDoWs?rlkey=t65wimousvyamofma9w5f93xm&st=3z4hfw5l&dl=0
 
-
 Dataset Folder Structure
 ---
 
@@ -71,6 +69,45 @@ Public_dataset/
       ...
     ...
 ```
+
+## Synchronized Diver Pose + Video Frames (`SYNCHRONIZED_DIVER_DATA/`)
+
+In addition to raw gesture video data, the dataset includes a structured subset named `SYNCHRONIZED_DIVER_DATA/`, located within the main Dropbox folder. This directory contains synchronized 3D diver pose data (from Qualisys QTM) paired with corresponding camera frames from the BlueROV2. It is intended for training and evaluating multimodal models that combine visual and motion cues for more robust underwater gesture recognition.
+
+Unlike the `Public_dataset/` folder, which contains raw videos, `SYNCHRONIZED_DIVER_DATA/` follows a new format where each gesture is organized into:
+- A gesture folder (e.g., `YOU/`, `BUDDY_UP/`, etc.)
+- Ten numbered subfolders (`1/` through `10/`) per gesture, each containing:
+  - A `frames/` folder of synchronized image frames.
+  - A `.json` file with 3D marker data and (when possible) 6D rigid body poses.
+
+### Folder Layout Example
+```
+SYNCHRONIZED_DIVER_DATA/
+├── YOU/
+│   ├── 1/
+│   │   ├── frames/
+│   │   └── YOU_1.json
+│   ├── 2/
+│   │   ├── frames/
+│   │   └── YOU_2.json
+│   └── ...
+├── BUDDY_UP/
+│   ├── 1/
+│   │   ├── frames/
+│   │   └── BUDDY_UP_1.json
+│   └── ...
+```
+
+### JSON Data Format
+Each JSON file is exported from QTM using the following settings:
+
+![alt text](image.png)
+
+Rigid bodies (if present) are labeled as:
+- `DIVER`: created from multiple tracked diver markers or from a single stable marker if insufficient.
+- `BR2`: created from BlueROV2 markers or a representative point.
+
+This structure ensures a clean alignment between pose and visual data for each short gesture clip, making the dataset suitable for pose-supervised gesture classification and tracking tasks.
 
 <!-- The `cameras.xml` contains the poses of each camera along with the distortion parameters, intrinsics and extrinsics. See `tools/util.py` for working with this file directly. The `images` directory contains the images and `points/points.ply` contains the dense pointcloud with `x,y,z,red,green,blue`. -->
 
@@ -127,4 +164,4 @@ Please contribute your scuba diving gesture data! Follow the instructions in 'da
 
 This work is made available for academic use under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
- <!-- For commercial use and queries please contact support@dronedeploy.com. -->
+ For commercial use and queries please contact support@dronedeploy.com.
