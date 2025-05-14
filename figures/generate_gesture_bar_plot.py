@@ -38,7 +38,7 @@ plt.figure(figsize=(12, 6))
 bar1 = plt.bar(df["Gesture"], df["Original Videos"], label='Original Videos')
 bar2 = plt.bar(df["Gesture"], df["Synchronized Videos"], bottom=df["Original Videos"], color='skyblue', label='Synchronized Videos')
 
-plt.title(f"Number of Videos per Gesture Class {date_string}", fontsize=14)
+plt.title(f"Number of Videos per Gesture Class ({date_string})", fontsize=14)
 plt.xlabel("Gesture", fontsize=12)
 plt.ylabel("Number of Videos", fontsize=12)
 plt.xticks(rotation=45, ha="right")

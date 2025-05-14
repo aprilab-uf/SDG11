@@ -29,7 +29,7 @@ Currently Available Gestures
 | FOLLOW ME | ![pipes1](/imgs/pipes1.png?raw=true "pipes1") |     98 | 1.3GB | [gesture videos](https://www.dropbox.com/scl/fo/pg53be2us3ju6sdb25fdn/AO-lBTEZJOniEqViOb8p0tI?rlkey=h96dzm5hbn4vm3qjxrkwab4r9&st=pybchl9z&dl=0)
 | STOP | ![pipes1](/imgs/pipes1.png?raw=true "pipes1") |     98 | 1.3GB | [gesture videos](https://www.dropbox.com/scl/fo/fbft7kjnej7f0q8u1oray/ABad602M9iHPL9gmxPAAnAY?rlkey=tdpyqa8pgiu7w85skfmb1ogwc&st=84ahtmoe&dl=0) -->
 
-## Total videos per class
+<!-- ## Total videos per class
 
 | Name      | Videos | Size | Link |
 |-----------|--------:|-----:|------|
@@ -43,12 +43,12 @@ Currently Available Gestures
 | DESCEND   |      75 | - | [gesture videos](https://www.dropbox.com/scl/fo/8yvv66exiqqioqqrsibds/ABSjSAlBxj-0L2jksfgKeoo?rlkey=i9iy8kqdqkpg5v5pf0iu62086&st=jim9peaz&dl=0) |
 | BUDDY UP  |      80 | - | [gesture videos](https://www.dropbox.com/scl/fo/9249p9x16pghzhxojg6wa/AIyhohQkP9ypSJx3ofHKh8s?rlkey=aty2ukhw29qbwtmz267uolrq0&st=9za27ioe&dl=0) |
 | FOLLOW ME |      77 | - | [gesture videos](https://www.dropbox.com/scl/fo/pg53be2us3ju6sdb25fdn/AO-lBTEZJOniEqViOb8p0tI?rlkey=h96dzm5hbn4vm3qjxrkwab4r9&st=pybchl9z&dl=0) |
-| STOP      |      84 | - | [gesture videos](https://www.dropbox.com/scl/fo/fbft7kjnej7f0q8u1oray/ABad602M9iHPL9gmxPAAnAY?rlkey=tdpyqa8pgiu7w85skfmb1ogwc&st=84ahtmoe&dl=0) |
+| STOP      |      84 | - | [gesture videos](https://www.dropbox.com/scl/fo/fbft7kjnej7f0q8u1oray/ABad602M9iHPL9gmxPAAnAY?rlkey=tdpyqa8pgiu7w85skfmb1ogwc&st=84ahtmoe&dl=0) | -->
 
 
- Download the full dataset here
+ Access the full dataset here!
 ---
-Download Links: https://www.dropbox.com/scl/fo/5rxj3gthms3urg4lqajwk/AFigP8iOmR46MKk3KaxDoWs?rlkey=t65wimousvyamofma9w5f93xm&st=3z4hfw5l&dl=0
+https://www.dropbox.com/scl/fo/5rxj3gthms3urg4lqajwk/AFigP8iOmR46MKk3KaxDoWs?rlkey=r4qctmr5j0p9akvsiqmynhown&st=zmd7s5of&dl=0
 
 Dataset Folder Structure
 ---
