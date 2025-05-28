@@ -23,6 +23,8 @@ When naming video files, they must follow the filename nomenclature:
 
 To process your diver videos, ensure the base file follows the correct naming convention. The video can then be split, with unique identifiers generated for each sub-video, using tools/video-splitter. See the readme.md within video-splitter for instructions on use (terminal command provided). I recommend splitting your larger videos into two second clips using video-splitter, then processing through the clips to eliminate sub-videos which do not contain gestures, or may be confusing as training or test data.
 
+To use video-splitter, please clone it from: https://github.com/c0decracker/video-splitter.git into the tools directory.
+
 ## What if I have my videos split already, but they need the UUID's/ hashes appended to the end of each filename?
 
 We provide a simple tool with a terminal command for this. See tools/rename_files.py
